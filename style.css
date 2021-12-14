@@ -55,6 +55,8 @@ nav{
     padding-top: 2em;
 }
 /*Navigationsbar styling slut*/
+
+/*1. sektion - forside start*/
 /*Titel*/
 header{
     font-family: var(--readex);
@@ -90,25 +92,118 @@ header{
     display: block;
     transform: rotate(-180deg);
 }
+/*1. sektion - forside slut*/
+
 /*Banner med navn*/
 .navnebanner{
     background-color: var(--rød);
     color: var(--lys);
     font-family: var(--beon);
-    text-transform: uppercase;
     font-size: 1.5em;
     padding: 0.1em;
     width: 100vw;
     margin: -8px;
-    margin-top: 0.6em;
+    margin-top: 1.8em;
     white-space: nowrap; 
     overflow: hidden;
     position: sticky;
     top: 0;
+    z-index: 1;
 }
+/*Skrå striber mellemrum*/
 .dekoration{
     width: 12em;
     margin-top: 2em;
     margin-left: -8px;
     mix-blend-mode: difference;
+}
+
+/*2. sektion multimediedesigner*/
+/*banner med overskrift*/
+.multimediedesigner h3{
+    background-color: var(--sort);
+    color: var(--lys);
+    font-family: var(--beon);
+    font-size: 1.5em;
+    padding: 0.1em;
+    width: 100vw;
+    margin-top: 3em;
+    white-space: nowrap; 
+    overflow: hidden;
+    margin-left: -8px;
+    margin-bottom: -0.5em;
+    position: sticky;
+    top: 1.28em;
+}
+/*Grid med overskrifter og beskrivende tekst*/
+.gridcontainer{
+    display: grid;
+    grid-template-columns: 27.34% 57.94% auto;
+}
+.gridcontainer h4{
+    font-family: var(--beon);
+    font-size: 0.95em;
+}
+.gridcontainer p{
+    font-family: var(--readex);
+    line-height: 1.5em;
+}
+.hvem{
+    grid-area: 1/1/2/2;
+}
+.ommig{
+    grid-area: 1/2/2/3;
+}
+.skærm{
+    grid-area: 2/2/3/4;
+    width: 60vw;
+}
+.hvorfor{
+    grid-area: 3/1/4/2;
+}
+.historie{
+    grid-area: 3/2/4/3;
+}
+/*Skrå steger dekoration*/
+.multimediedesigner .dekoration{
+    transform: scaleX(-1);
+    float:right;
+    margin-right: 2em;
+    mix-blend-mode: normal;
+}
+/*2. sektion slut*/
+
+/*3. sektion - kompetencer*/
+/*banner med overskrift*/
+.kompetencer h3{
+    background-color: var(--sort);
+    color: var(--lys);
+    font-family: var(--beon);
+    font-size: 1.5em;
+    padding: 0.1em;
+    width: 100vw;
+    margin-top: 5em;
+    white-space: nowrap; 
+    overflow: hidden;
+    margin-left: -8px;
+    margin-bottom: -0.5em;
+}
+/*Grid med overskrifter og tekst*/
+.uddannelse{
+    grid-area: 1/1/2/2;
+}
+.uddannelser{
+    grid-area: 1/2/2/3;
+}
+.programmer{
+    grid-area: 2/1/3/2;
+}
+.erfaring{
+    grid-area: 2/2/3/3;
+}
+.kontakt{
+    grid-area: 3/1/4/2;
+}
+.oplysninger{
+    grid-area: 3/2/4/3;
 }
