@@ -1,1 +1,114 @@
-
+/*Farver og fonte*/
+@font-face {
+    font-family: beon;
+    src: url(/assets/fonts/beon/Beon.otf);
+  }
+@font-face {
+    font-family: readex;
+    src: url(/assets/fonts/Readex_Pro/ReadexPro-VariableFont_wght.ttf);
+  }
+  :root{
+    --rød: #FF0000;
+    --grøn: #00FC00;
+    --pink: #F523F5;
+    --sort: #000;
+    --lys: #F5F5F5;
+    --beon: 'beon', sans-serif;
+    --readex: 'readex', sans-serif;
+}
+body{
+    background-color: var(--lys);
+}
+/*Navigationsbar styling start*/
+nav{
+    height: 100vh;
+    width: 38px;
+    position: fixed; 
+    top: 0;
+    right: 0;
+    background-color: var(--sort);
+    z-index: -1;
+}
+.rotate{
+    position: relative;
+    text-decoration: none;
+    color: var(--lys);
+    display: block;
+    transform: rotate(270deg);
+    justify-content: center;
+}
+.arbejde{
+    margin-top: 20em;
+    margin-bottom: -12em;
+    font-family: var(--readex);
+    text-transform: uppercase;
+}
+.personligt{
+    font-family: var(--beon);
+    margin-top: 20em;
+}
+.socials{
+    margin-top: 12em;
+}
+.socials a{
+    display: block;
+    padding-top: 2em;
+}
+/*Navigationsbar styling slut*/
+/*Titel*/
+header{
+    font-family: var(--readex);
+    text-transform: uppercase;
+    color: var(--rød);
+    margin-left: -8px;
+    margin-top: -0.5em;
+    width: 100vw;
+    white-space: nowrap; 
+    overflow: hidden;
+    font-size: 2em;
+    line-height: 1em;
+}
+/*Billede med slangevæsen*/
+.slange{
+    position: relative;
+    margin-top: -12em;
+    mix-blend-mode: difference;
+    width: 80vw;
+    padding-left: 5em;
+}
+/*Citat*/
+.citat{
+    font-family: var(--beon);
+    width: 5em;
+    text-align: center;
+    margin: 0;
+    line-height: 1.2em;
+    font-size: 2.5em;
+    margin-left: 1em;
+}
+.citat.ned{
+    display: block;
+    transform: rotate(-180deg);
+}
+/*Banner med navn*/
+.navnebanner{
+    background-color: var(--rød);
+    color: var(--lys);
+    font-family: var(--beon);
+    text-transform: uppercase;
+    font-size: 1.5em;
+    padding: 0.1em;
+    width: 100vw;
+    margin: -8px;
+    margin-top: 0.6em;
+    white-space: nowrap; 
+    overflow: hidden;
+    position: sticky;
+    top: 0;
+}
+.dekoration{
+    width: 12em;
+    margin-top: 2em;
+    margin-left: -8px;
+    mix-blend-mode: difference;
+}
