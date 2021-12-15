@@ -21,13 +21,14 @@ body{
 }
 /*Navigationsbar styling start*/
 nav{
-    height: 100vh;
+    height: 110vh;
     width: 38px;
     position: fixed; 
     top: 0;
     right: 0;
     background-color: var(--sort);
     z-index: -1;
+    overflow-x: hidden;
 }
 .rotate{
     position: relative;
@@ -48,7 +49,7 @@ nav{
     margin-top: 20em;
 }
 .socials{
-    margin-top: 12em;
+    margin-top: 2.8em;
 }
 .socials a{
     display: block;
@@ -64,7 +65,7 @@ header{
     color: var(--rød);
     margin-left: -8px;
     margin-top: -0.5em;
-    width: 100vw;
+    width: 110vw;
     white-space: nowrap; 
     overflow: hidden;
     font-size: 2em;
@@ -83,7 +84,7 @@ header{
     font-family: var(--beon);
     width: 5em;
     text-align: center;
-    margin: 0;
+    margin-top: -2em;
     line-height: 1.2em;
     font-size: 2.5em;
     margin-left: 1em;
@@ -91,6 +92,7 @@ header{
 .citat.ned{
     display: block;
     transform: rotate(-180deg);
+    margin-top: -1em;
 }
 /*1. sektion - forside slut*/
 
@@ -101,9 +103,9 @@ header{
     font-family: var(--beon);
     font-size: 1.5em;
     padding: 0.1em;
-    width: 100vw;
-    margin: -8px;
-    margin-top: 1.8em;
+    width: 110vw;
+    margin-left: -8px;
+    margin-top: 2.7em;
     white-space: nowrap; 
     overflow: hidden;
     position: sticky;
@@ -126,7 +128,7 @@ header{
     font-family: var(--beon);
     font-size: 1.5em;
     padding: 0.1em;
-    width: 100vw;
+    width: 110vw;
     margin-top: 3em;
     white-space: nowrap; 
     overflow: hidden;
@@ -138,7 +140,7 @@ header{
 /*Grid med overskrifter og beskrivende tekst*/
 .gridcontainer{
     display: grid;
-    grid-template-columns: 27.34% 57.94% auto;
+    grid-template-columns: 35% 55% auto;
 }
 .gridcontainer h4{
     font-family: var(--beon);
@@ -181,12 +183,14 @@ header{
     font-family: var(--beon);
     font-size: 1.5em;
     padding: 0.1em;
-    width: 100vw;
+    width: 110vw;
     margin-top: 5em;
     white-space: nowrap; 
     overflow: hidden;
     margin-left: -8px;
     margin-bottom: -0.5em;
+    position: sticky;
+    top: 1.27em;
 }
 /*Grid med overskrifter og tekst*/
 .uddannelse{
