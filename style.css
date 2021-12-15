@@ -7,7 +7,7 @@
     font-family: readex;
     src: url(/assets/fonts/Readex_Pro/ReadexPro-VariableFont_wght.ttf);
   }
-  @font-face {
+@font-face {
     font-family: readexbold;
     src: url(/assets/fonts/Readex_Pro/static/ReadexPro-Bold.ttf);
   }
@@ -69,7 +69,7 @@ nav{
 /*Titel*/
 header{
     position: relative;
-    z-index: 2;
+    z-index: 1;
     font-family: var(--bold);
     text-transform: uppercase;
     color: var(--rød);
@@ -252,7 +252,7 @@ nav{
     margin-top: 18em;
 }
 .socials{
-    margin-top: 1.5em;
+    margin-top: 4em;
     padding-left: 0.5em;
 }
 .citat{
