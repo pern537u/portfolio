@@ -34,11 +34,10 @@ nav{
     top: 0;
     right: 0;
     background-color: var(--sort);
-    z-index: -1;
     overflow-x: hidden;
+    z-index: 1;
 }
 .rotate{
-    position: relative;
     text-decoration: none;
     color: var(--lys);
     display: block;
@@ -56,19 +55,21 @@ nav{
     margin-top: 20em;
 }
 .socials{
-    margin-top: 1.5em;
+    margin-top: 6em;
     min-width: 2.5em;
     max-width: 3.5em;
 }
 .socials a{
     display: block;
-    padding-top: 2em;
+    margin-top: 2em;
 }
 /*Navigationsbar styling slut*/
 
 /*1. sektion - forside start*/
 /*Titel*/
 header{
+    position: relative;
+    z-index: 2;
     font-family: var(--bold);
     text-transform: uppercase;
     color: var(--rød);
@@ -83,22 +84,25 @@ header{
 }
 /*Billede med slangevæsen*/
 .slange{
+
     float: right;
     margin-right: -8px;
-    margin-top: -8em;
+    margin-top: -4.5em;
     mix-blend-mode: difference;
     width: 80vw;
     max-width: 715px;
 }
 /*Citat*/
 .citat{
+    position: relative;
     font-family: var(--beon);
     width: 5em;
     text-align: center;
     margin-top: -2em;
     line-height: 1.2em;
     font-size: 2.5em;
-    margin-left: 1em;
+    margin-left: 0.5em;
+    z-index: -1;
 }
 .citat.ned{
     display: block;
@@ -121,7 +125,7 @@ header{
     overflow: hidden;
     position: sticky;
     top: 0;
-    z-index: 1;
+    z-index: 2;
 }
 /*Skrå striber mellemrum*/
 .dekoration{
@@ -147,6 +151,7 @@ header{
     margin-bottom: -0.5em;
     position: sticky;
     top: 1.28em;
+    z-index: 1;
 }
 /*Grid med overskrifter og beskrivende tekst*/
 .gridcontainer{
