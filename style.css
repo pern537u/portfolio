@@ -7,6 +7,10 @@
     font-family: readex;
     src: url(/assets/fonts/Readex_Pro/ReadexPro-VariableFont_wght.ttf);
   }
+  @font-face {
+    font-family: readexbold;
+    src: url(/assets/fonts/Readex_Pro/static/ReadexPro-Bold.ttf);
+  }
   :root{
     --rød: #FF0000;
     --grøn: #00FC00;
@@ -15,14 +19,17 @@
     --lys: #F5F5F5;
     --beon: 'beon', sans-serif;
     --readex: 'readex', sans-serif;
+    --bold: 'readexbold', sans-serif;
 }
+@media screen and (min-width: 1px){
 body{
     background-color: var(--lys);
+    overflow-x: hidden;
 }
 /*Navigationsbar styling start*/
 nav{
-    height: 110vh;
-    width: 38px;
+    height: 100%;
+    width: clamp(38px, 5vw, 80px);
     position: fixed; 
     top: 0;
     right: 0;
@@ -39,7 +46,7 @@ nav{
     justify-content: center;
 }
 .arbejde{
-    margin-top: 20em;
+    margin-top: 15em;
     margin-bottom: -12em;
     font-family: var(--readex);
     text-transform: uppercase;
@@ -49,7 +56,9 @@ nav{
     margin-top: 20em;
 }
 .socials{
-    margin-top: 2.8em;
+    margin-top: 1.5em;
+    min-width: 2.5em;
+    max-width: 3.5em;
 }
 .socials a{
     display: block;
@@ -60,24 +69,26 @@ nav{
 /*1. sektion - forside start*/
 /*Titel*/
 header{
-    font-family: var(--readex);
+    font-family: var(--bold);
     text-transform: uppercase;
     color: var(--rød);
-    margin-left: -8px;
+    margin-left: -12px;
+    margin-right: -8px;
     margin-top: -0.5em;
-    width: 110vw;
+    width: 100vw;
     white-space: nowrap; 
     overflow: hidden;
-    font-size: 2em;
-    line-height: 1em;
+    font-size: clamp(1.2em, 4.5vw, 3em);
+    line-height: 0.5em;
 }
 /*Billede med slangevæsen*/
 .slange{
-    position: relative;
-    margin-top: -12em;
+    float: right;
+    margin-right: -8px;
+    margin-top: -8em;
     mix-blend-mode: difference;
     width: 80vw;
-    padding-left: 5em;
+    max-width: 715px;
 }
 /*Citat*/
 .citat{
@@ -103,7 +114,7 @@ header{
     font-family: var(--beon);
     font-size: 1.5em;
     padding: 0.1em;
-    width: 110vw;
+    width: 100vw;
     margin-left: -8px;
     margin-top: 2.7em;
     white-space: nowrap; 
@@ -122,13 +133,13 @@ header{
 
 /*2. sektion multimediedesigner*/
 /*banner med overskrift*/
-.multimediedesigner h3{
+.banner{
     background-color: var(--sort);
     color: var(--lys);
     font-family: var(--beon);
     font-size: 1.5em;
     padding: 0.1em;
-    width: 110vw;
+    width: 100vw;
     margin-top: 3em;
     white-space: nowrap; 
     overflow: hidden;
@@ -157,8 +168,9 @@ header{
     grid-area: 1/2/2/3;
 }
 .skærm{
-    grid-area: 2/2/3/4;
-    width: 60vw;
+    grid-area: 2/2/3/3;
+    width: 25vw;
+    justify-self: end;
 }
 .hvorfor{
     grid-area: 3/1/4/2;
@@ -172,26 +184,12 @@ header{
     float:right;
     margin-right: 2em;
     mix-blend-mode: normal;
+    margin-bottom: 2em;
 }
 /*2. sektion slut*/
 
 /*3. sektion - kompetencer*/
-/*banner med overskrift*/
-.kompetencer h3{
-    background-color: var(--sort);
-    color: var(--lys);
-    font-family: var(--beon);
-    font-size: 1.5em;
-    padding: 0.1em;
-    width: 110vw;
-    margin-top: 5em;
-    white-space: nowrap; 
-    overflow: hidden;
-    margin-left: -8px;
-    margin-bottom: -0.5em;
-    position: sticky;
-    top: 1.27em;
-}
+/*banner med overskrift er stylet sammen med banneret i sektionen over*/
 /*Grid med overskrifter og tekst*/
 .uddannelse{
     grid-area: 1/1/2/2;
@@ -210,4 +208,86 @@ header{
 }
 .oplysninger{
     grid-area: 3/2/4/3;
+}
+}
+@media screen and (min-width: 750px){
+/*Billede med slangevæsen*/
+.slange{
+    margin-top: -18em;
+}
+.citat{
+    position:absolute;
+    margin-top: 10.6em;
+}
+.citat.ned{
+    position:absolute;
+    margin-top: 13em;
+}
+p{
+    font-size: 1.15em;
+}
+h4{
+    font-size: 1.3em;
+}
+nav{
+    padding-top: 8em;
+}
+}
+@media screen and (min-width: 1250px){
+.slange{
+    margin-top: -20em;
+}
+.rotate{
+    font-size: 1.2em;
+}
+.arbejde{
+    margin-top: 11em;
+}
+.personligt{
+    margin-top: 18em;
+}
+.socials{
+    margin-top: 1.5em;
+    padding-left: 0.5em;
+}
+.citat{
+    font-size: 4.5em;
+    margin-top: 3.5em;
+    margin-left: 20vw;
+}
+.citat.ned{
+    margin-top: 5.85em;
+    margin-left: 20vw;
+}
+.navnebanner{
+    font-size: 2em;
+}
+.banner{
+    font-size: 2em;
+    margin-bottom: 0em;
+}
+/*Skrå striber mellemrum*/
+.dekoration{
+    width: 25em;
+}
+.dekoration.højre{
+    margin-right: 4.5em;
+    margin-bottom: 4em;
+}
+/*ændringer i grid*/
+.gridcontainer{
+    grid-template-columns: 27.3% 22.8% 38% auto;
+}
+.gridcontainer h4{
+    font-size: 1.5em;
+    margin-left: 3em;
+}
+.gridcontainer p{
+    font-size: 1.35em;
+}
+.skærm{
+    grid-area: 1/3/4/4;
+    margin-top: 2em;
+    margin-left: 2em;
+}
 }
