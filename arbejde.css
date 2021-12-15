@@ -1,26 +1,3 @@
-/*Farver og fonte*/
-@font-face {
-    font-family: beon;
-    src: url(/assets/fonts/beon/Beon.otf);
-  }
-@font-face {
-    font-family: readex;
-    src: url(/assets/fonts/Readex_Pro/ReadexPro-VariableFont_wght.ttf);
-  }
-@font-face {
-    font-family: readexbold;
-    src: url(/assets/fonts/Readex_Pro/static/ReadexPro-Bold.ttf);
-  }
-:root{
-    --rød: #FF0000;
-    --grøn: #00FC00;
-    --pink: #F523F5;
-    --sort: #000;
-    --lys: #F5F5F5;
-    --beon: 'beon', sans-serif;
-    --readex: 'readex', sans-serif;
-    --bold: 'readexbold', sans-serif;
-}
 @media screen and (min-width: 1px){
 .navnebanner{
     top:0;
@@ -47,20 +24,13 @@
     position: relative;
     top: 1em;
     margin-right: 10%;
-
 }
 .collagemoi{
     font-size: 2em;
+    margin-bottom: -0.5em;
 }
 
 /*2. sektion - rumrejsen*/
-.rumrejsen h4{
-    font-family: var(--beon);
-    font-size: 0.95em;
-}
-.rumrejsen p{
-    font-family: var(--readex);
-}
 .gridcontainerarbejde{
     display: grid;
     grid-template-columns: 30% 60% 10%;
@@ -84,13 +54,6 @@
 .stikord2{
     grid-area: 5/1/6/3;
 }
-.rumrejsen .dekoration{
-    transform: scaleX(-1);
-    float:right;
-    margin-right: 2em;
-    mix-blend-mode: normal;
-    margin-bottom: 2em;
-}
 /*3. sektion - jive danseskole*/
 .jivevideo{
     grid-area: 2/2/6/3;
@@ -109,20 +72,6 @@
 }
 .stickyknap{
     grid-area: 5/1/6/2;
-}
-.jive h4{
-    font-family: var(--beon);
-    font-size: 0.95em;
-}
-.jive p{
-    font-family: var(--readex);
-}
-.jive .dekoration{
-    transform: scaleX(-1);
-    float:right;
-    margin-right: 2em;
-    mix-blend-mode: normal;
-    margin-bottom: 2em;
 }
 /*4. sektion - boligboss*/
 .bbvideo{
@@ -151,13 +100,6 @@
 .mockups{
     grid-area: 7/1/8/3;
 }
-.boligboss h4{
-    font-family: var(--beon);
-    font-size: 0.95em;
-}
-.boligboss p{
-    font-family: var(--readex);
-}
 }
 @media screen and (min-width: 750px){
 .collagemoi{
@@ -167,12 +109,6 @@
     font-size: 2em;
 }
 /*2. sektion - rumrejsen*/
-.rumrejsen h4{
-    font-size: 1.3em;
-}
-.rumrejsen p{
-    font-size: 1.15em;
-}
 .rumrejsenforside{
     grid-area: 2/2/3/4;
     margin-right: 38px;
@@ -191,13 +127,6 @@
 .stikord2{
     grid-area: 3/1/4/2;
     margin-top: 4em;
-}
-/*3. sektion - jive danseskole*/
-.jive h4{
-    font-size: 1.3em;
-}
-.jive p{
-    font-size: 1.15em;
 }
 /*4. sektion - boligboss*/
 .bbvideo{
@@ -225,21 +154,8 @@
     grid-area: 5/1/6/2;
     margin-top: 4em;
 }
-.boligboss h4{
-    font-size: 1.3em;
-}
-.boligboss p{
-    font-size: 1.15em;
-}
 }
 @media screen and (min-width: 1250px){
-h4{
-    font-size: 1.5em;
-    margin-left: 3em;
-}
-p{
-    font-size: 1.35em;
-}
 .flimmer{
     margin-top: -4em;
     margin-right: 10%;
@@ -255,9 +171,4 @@ p{
 .collagemoi2{
     margin-bottom: 8em;
 }
-/*2. sektion - rumrejsen*/
-.rumrejsen .banner{
-    margin-top: 1.5em;
-}
-
 }

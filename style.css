@@ -1,4 +1,4 @@
-/*Farver og fonte*/
+/*Fonte*/
 @font-face {
     font-family: beon;
     src: url(/assets/fonts/beon/Beon.otf);
@@ -11,6 +11,7 @@
     font-family: readexbold;
     src: url(/assets/fonts/Readex_Pro/static/ReadexPro-Bold.ttf);
   }
+/*Her sættes nogle values for farverr og fonte, der benyttes gentagende gange*/
   :root{
     --rød: #FF0000;
     --grøn: #00FC00;
@@ -21,11 +22,20 @@
     --readex: 'readex', sans-serif;
     --bold: 'readexbold', sans-serif;
 }
-@media screen and (min-width: 1px){
+/*Overordnet styling af baggrund samt de mest brugte fonte, som skal styles ens på alle siderne*/
 body{
     background-color: var(--lys);
     overflow-x: hidden;
 }
+.h4{
+    font-family: var(--beon);
+    font-size: 0.95em;
+}
+.p{
+    font-family: var(--readex);
+    line-height: 1.5em;
+}
+
 /*Navigationsbar styling start*/
 nav{
     height: 100%;
@@ -65,6 +75,9 @@ nav{
 }
 /*Navigationsbar styling slut*/
 
+/************************************************/
+
+/*Herunder begynder stylingen af index-siden*/
 /*1. sektion - forside start*/
 /*Titel*/
 header{
@@ -92,7 +105,6 @@ header{
 }
 /*Citat*/
 .citat{
-    position: relative;
     font-family: var(--beon);
     width: 5em;
     text-align: center;
@@ -100,7 +112,6 @@ header{
     line-height: 1.2em;
     font-size: 2.5em;
     margin-left: 0.5em;
-    z-index: -1;
 }
 .citat.ned{
     display: block;
@@ -117,8 +128,7 @@ header{
     font-size: 1.5em;
     padding: 0.1em 0 0.1em 0;
     width: 100vw;
-    margin-left: -8px;
-    margin-top: 2.7em;
+    margin:2.7em 0 0 -8px;
     white-space: nowrap; 
     overflow: hidden;
     position: sticky;
@@ -128,7 +138,8 @@ header{
 /*Skrå striber mellemrum*/
 .dekoration{
     width: 12em;
-    margin-top: 2em;
+    margin-top: 3em;
+    margin-bottom: 3em;
     margin-left: -8px;
     mix-blend-mode: difference;
 }
@@ -141,7 +152,7 @@ header{
     font-family: var(--beon);
     font-size: 1.5em;
     padding: 0.1em 0 0.1em 0;
-    margin: 3em 0 -8px -0.5em;
+    margin: 0 0 -8px -0.5em;
     width: 100vw;
     white-space: nowrap; 
     overflow: hidden;
@@ -152,15 +163,7 @@ header{
 /*Grid med overskrifter og beskrivende tekst*/
 .gridcontainer{
     display: grid;
-    grid-template-columns: 35% 55% auto;
-}
-.gridcontainer h4{
-    font-family: var(--beon);
-    font-size: 0.95em;
-}
-.gridcontainer p{
-    font-family: var(--readex);
-    line-height: 1.5em;
+    grid-template-columns: 30% 60% 10%;
 }
 .hvem{
     grid-area: 1/1/2/2;
@@ -180,12 +183,12 @@ header{
     grid-area: 3/2/4/3;
 }
 /*Skrå steger dekoration*/
-.multimediedesigner .dekoration{
+.dekorationhøjre{
+    width: 12em;
+    margin: 3em 2em 3em 0;
     transform: scaleX(-1);
     float:right;
-    margin-right: 2em;
     mix-blend-mode: normal;
-    margin-bottom: 2em;
 }
 /*2. sektion slut*/
 
@@ -210,12 +213,31 @@ header{
 .oplysninger{
     grid-area: 3/2/4/3;
 }
-}
+/*3. sektion slut*/
 @media screen and (min-width: 750px){
+/*Overordnet styling af font og navbar for alle sider*/
+.p{
+    font-size: 1.15em;
+}
+.h4{
+    font-size: 1.3em;
+    margin-left: 1em;
+}
 nav{
     width: 46px;
+    padding-top: 8em;
 }
-/*Billede med slangevæsen*/
+.dekoration{
+    width: 15em;
+    margin: 4em 0 4em 0;
+}
+.dekorationhøjre{
+    width: 15em;
+    margin: 4em 46px 4em 0;
+}
+
+/*Styling af index-side*/
+/*1. sektion - forside*/
 .slange{
     margin-top: -18em;
 }
@@ -227,23 +249,18 @@ nav{
     position:absolute;
     margin-top: 13em;
 }
-p{
-    font-size: 1.15em;
-}
-h4{
-    font-size: 1.3em;
-    margin-left: 1em;
-}
-nav{
-    padding-top: 8em;
-}
 }
 @media screen and (min-width: 1250px){
+/*Overordnet styling af font og navbar for alle sider*/   
+.h4{
+    font-size: 1.5em;
+    margin-left: 3em;
+}
+.p{
+    font-size: 1.35em;
+}
 nav{
     width: 80px;
-}
-.slange{
-    margin-top: -20em;
 }
 .rotate{
     font-size: 1.2em;
@@ -258,6 +275,24 @@ nav{
     margin-top: 4em;
     padding-left: 0.5em;
 }
+.navnebanner{
+    font-size: 2em;
+}
+.banner{
+    font-size: 2em;
+    margin-bottom: 0em;
+}
+.dekoration{
+    width: 25em;
+}
+.dekorationhøjre{
+    width: 25em;
+    margin-right: 80px;
+}
+/*Styling af index-side*/
+.slange{
+    margin-top: -20em;
+}
 .citat{
     font-size: 4.5em;
     margin-top: 3.5em;
@@ -267,31 +302,9 @@ nav{
     margin-top: 5.85em;
     margin-left: 20vw;
 }
-.navnebanner{
-    font-size: 2em;
-}
-.banner{
-    font-size: 2em;
-    margin-bottom: 0em;
-}
-/*Skrå striber mellemrum*/
-.dekoration{
-    width: 25em;
-}
-.dekoration.højre{
-    margin-right: 4.5em;
-    margin-bottom: 4em;
-}
 /*ændringer i grid*/
 .gridcontainer{
-    grid-template-columns: 27.3% 22.8% 38% auto;
-}
-.gridcontainer h4{
-    font-size: 1.5em;
-    margin-left: 3em;
-}
-.gridcontainer p{
-    font-size: 1.35em;
+    grid-template-columns: 30% 25% 35% auto;
 }
 .skærm{
     grid-area: 1/3/4/4;
