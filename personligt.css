@@ -1,0 +1,227 @@
+@media screen and (min-width: 1px){
+    .navnebanner{
+        top:0;
+        margin-top: -8px;
+        margin-bottom: 0em;
+        z-index: 2;
+    }
+    .navnebanner a{
+        text-decoration: none;
+        color: var(--lys);
+    }
+    /*1. sektion - øverste del af siden*/
+    .contagious{
+        width: 100%;
+        max-width: 1250px;
+        float: right;
+        margin-right: 30px;
+    }
+    .forside h2{
+        font-family: var(--beon);
+        text-align: end;
+        top: 0.5em;
+        margin-right: 15%;
+    }
+    .collagemoi{
+        font-size: 2em;
+        margin-bottom: -0.5em;
+    }
+    /*2. sektion - Akrylmarier*/
+    /*Første element i sektionen "donnie darko"*/
+    .gridcontainerdonnie{
+        display: grid;
+        grid-template-columns: 30% 60% 10%;
+        margin-top: 1em;
+    }
+    .gridcontainerdonnie h4{
+        margin-top: 0em;
+    }
+    .inspiration{
+        grid-area: 1/2/2/3;
+    }
+    .donnie{
+        grid-area: 2/2/9/4;
+        margin-right: 30px;
+        justify-self: stretch;
+    }
+    .stikord1{
+        grid-area: 2/1/3/2;
+    }
+    .stikord2{
+        grid-area: 3/1/4/2;
+    }
+    .stikord3{
+        grid-area: 4/1/5/2;
+    }
+    .stikord4{
+        grid-area: 5/1/6/2;
+    }
+    .stikord5{
+        grid-area: 6/1/7/2;
+    }
+    .stikord6{
+        grid-area: 7/1/8/2;
+    }
+    .stikord7{
+        grid-area: 8/1/9/2;
+    }
+    /*Næste element i sektionen "contagious"*/
+    .gridcontainercontagious{
+        display: grid;
+        grid-template-columns: 30% 60% 10%;
+        margin-top: 3em;
+    }
+    .gridcontainercontagious h4{
+        margin-top: 0em;
+    }
+    .inspiration{
+        grid-area: 1/2/2/3;
+    }
+    .contagiousgrid{
+        grid-area: 2/2/6/4;
+        margin-right: 30px;
+        justify-self: stretch;
+    }
+    .contagiousmaleri{
+        grid-area: 6/2/10/4;
+        margin-right: 30px;
+        justify-self: stretch;
+    }
+    .stikord8{
+        grid-area: 9/1/10/2;
+    }
+    .stikord9{
+        grid-area: 10/1/11/2;
+    }
+    /*Næste element i sektionen "telefoot"*/
+    .gridcontainertelefoot{
+        display: grid;
+        grid-template-columns: 30% 60% 10%;
+        margin-top: 3em;
+    }
+    .inspiration{
+        grid-area: 1/2/2/3;
+    }
+    .sketch1{
+        grid-area: 2/2/3/4;
+        width: 48.5%;
+        margin-left: 50%;
+        margin-right: 30px;
+        justify-self: end;
+    }
+    .sketch2{
+        grid-area: 2/2/3/4;
+        width: 45%;
+        justify-self: start;
+    }
+    .telefoot{
+        grid-area: 3/2/4/4;
+        margin-right: 30px;
+        justify-self: stretch;
+    }
+
+    /*3. sektion - custom shoes*/
+    .gridcontainermichelangelo{
+        display: grid;
+        grid-template-columns: 30% 60% 10%;
+        margin-top: 3em;
+    }
+    .inspiration{
+        grid-area: 1/2/2/3;
+    }
+    .michelangelo{
+        grid-area: 2/2/4/4;
+        margin-right: 30px;
+        justify-self: stretch;
+    }
+    .michelangelodetaljer{
+        grid-area: 4/2/5/4;
+        justify-self: stretch;
+        margin-right: 30px;
+    }
+
+    .gridcontainermacmiller{
+        display: grid;
+        grid-template-columns: 30% 60% 10%;
+        margin-top: 3em;
+    }
+    .inspiration{
+        grid-area: 1/2/2/3;
+    }
+    .macmiller{
+        grid-area: 2/2/4/4;
+        margin-right: 30px;
+        justify-self: stretch;
+    }
+    .macmillerdetaljer{
+        grid-area: 4/2/5/4;
+        justify-self: stretch;
+        margin-right: 30px;
+    }
+}
+@media screen and (min-width: 750px){
+    .forside h2{
+        position: relative;
+        margin-top: 1em;
+        margin-right: 15%;
+    }
+    .collagemoi{
+        font-size: 4em;
+        margin-bottom: 1em;
+    }
+    .collagemoi2{
+        font-size: 2em;
+    }
+    .donnie{
+        margin-right: 38px;
+        max-width: 500px;
+    }
+    .contagiousgrid{
+        grid-area: 2/2/6/3;
+
+    }
+    .contagiousmaleri{
+        grid-area: 6/2/10/3;
+    }
+    .sketch1{
+        grid-area: 2/2/3/3;
+        width: 48.5%;
+        margin-left: 50%;
+        margin-right: 30px;
+        justify-self: end;
+    }
+    .sketch2{
+        grid-area: 2/2/3/3;
+        width: 45%;
+        justify-self: start;
+    }
+    .telefoot{
+        grid-area: 3/2/4/3;
+        margin-right: 30px;
+        justify-self: stretch;
+    }
+}
+@media screen and (min-width: 1250px){
+    .contagious{
+        width: 60%;
+        float: right;
+        margin-right: 70px;
+    }
+    .forside h2{
+        left: -3%;
+    }
+    .collagemoi{
+        font-size: 4em;
+        padding-top: 2.5em;
+        margin-bottom: 0.5em;
+    }
+    .collagemoi2{
+        font-size: 2.5em;
+    }
+    .contagiousgrid{
+        max-width: 750px;
+    }
+    .contagiousmaleri{
+        max-width: 750px;
+    }
+}
