@@ -28,14 +28,6 @@
     }
     /*2. sektion - Akrylmarier*/
     /*Første element i sektionen "donnie darko"*/
-    .gridcontainerdonnie{
-        display: grid;
-        grid-template-columns: 30% 60% 10%;
-        margin-top: 1em;
-    }
-    .gridcontainerdonnie h4{
-        margin-top: 0em;
-    }
     .inspiration{
         grid-area: 1/2/2/3;
     }
@@ -44,64 +36,21 @@
         margin-right: 30px;
         justify-self: stretch;
     }
-    .stikord1{
-        grid-area: 2/1/3/2;
-    }
-    .stikord2{
-        grid-area: 3/1/4/2;
-    }
-    .stikord3{
-        grid-area: 4/1/5/2;
-    }
-    .stikord4{
-        grid-area: 5/1/6/2;
-    }
-    .stikord5{
-        grid-area: 6/1/7/2;
-    }
-    .stikord6{
-        grid-area: 7/1/8/2;
-    }
-    .stikord7{
-        grid-area: 8/1/9/2;
+    .stikord{
+        grid-area: 2/1/4/2;
     }
     /*Næste element i sektionen "contagious"*/
-    .gridcontainercontagious{
-        display: grid;
-        grid-template-columns: 30% 60% 10%;
-        margin-top: 3em;
-    }
-    .gridcontainercontagious h4{
-        margin-top: 0em;
-    }
-    .inspiration{
-        grid-area: 1/2/2/3;
-    }
     .contagiousgrid{
-        grid-area: 2/2/6/4;
+        grid-area: 2/2/3/4;
         margin-right: 30px;
         justify-self: stretch;
     }
     .contagiousmaleri{
-        grid-area: 6/2/10/4;
+        grid-area: 3/2/4/4;
         margin-right: 30px;
         justify-self: stretch;
     }
-    .stikord8{
-        grid-area: 9/1/10/2;
-    }
-    .stikord9{
-        grid-area: 10/1/11/2;
-    }
     /*Næste element i sektionen "telefoot"*/
-    .gridcontainertelefoot{
-        display: grid;
-        grid-template-columns: 30% 60% 10%;
-        margin-top: 3em;
-    }
-    .inspiration{
-        grid-area: 1/2/2/3;
-    }
     .sketch1{
         grid-area: 2/2/3/4;
         width: 48.5%;
@@ -121,40 +70,31 @@
     }
 
     /*3. sektion - custom shoes*/
-    .gridcontainermichelangelo{
-        display: grid;
-        grid-template-columns: 30% 60% 10%;
-        margin-top: 3em;
-    }
-    .inspiration{
-        grid-area: 1/2/2/3;
-    }
+    /*"michelangelo" sko*/
     .michelangelo{
-        grid-area: 2/2/4/4;
+        grid-area: 2/2/3/4;
         margin-right: 30px;
         justify-self: stretch;
     }
     .michelangelodetaljer{
-        grid-area: 4/2/5/4;
+        grid-area: 3/2/4/4;
         justify-self: stretch;
         margin-right: 30px;
     }
-
-    .gridcontainermacmiller{
-        display: grid;
-        grid-template-columns: 30% 60% 10%;
-        margin-top: 3em;
+    .detaljer{
+        grid-area: 3/1/4/2;
     }
+    /*Mac miller sko*/
     .inspiration{
         grid-area: 1/2/2/3;
     }
     .macmiller{
-        grid-area: 2/2/4/4;
+        grid-area: 2/2/3/4;
         margin-right: 30px;
         justify-self: stretch;
     }
     .macmillerdetaljer{
-        grid-area: 4/2/5/4;
+        grid-area: 3/2/4/4;
         justify-self: stretch;
         margin-right: 30px;
     }
