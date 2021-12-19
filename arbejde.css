@@ -1,15 +1,10 @@
 @media screen and (min-width: 1px){
+/*Navnebanneret som er stylet i indexfilen placeres øverst på siden her*/
 .navnebanner{
-    top:0;
     margin-top: -8px;
-    margin-bottom: 0em;
-    z-index: 2;
 }
-.navnebanner a{
-    text-decoration: none;
-    color: var(--lys);
-}
-/*1. sektion - øverste del af siden*/
+
+/*1. sektion - forside her styles billede og tekst*/
 .flimmer{
     margin-left: -8px;
     width: 100vw;
@@ -30,7 +25,7 @@
     margin-bottom: -0.5em;
 }
 
-/*2. sektion - rumrejsen*/
+/*2. sektion - rumrejsen her placeres elementer i grid og billeder styles i størrelse*/
 .opgavebeskrivelse{
     grid-area: 1/2/2/3;
 }
@@ -53,15 +48,17 @@
 .læsmere{
     grid-area: 6/1/7/3;
 }
+/*pilen som skal vise mere tekst når der trykkes på den, samt teksten som skal være skjult når der ikke er trykket på knappen styles her*/
 #læsmerepil{
     width: 2em;
     margin-left: 1em;
+    margin-top: 1em;
 }
 #mere {
     display: none;
 }
 
-/*3. sektion - jive danseskole*/
+/*3. sektion - jive danseskole placering af elementer i grid, samt billedstørrelser*/
 .jivevideo{
     grid-area: 2/2/3/3;
     width: 45vw;
@@ -70,6 +67,7 @@
 }
 .stikordjive{
     grid-area: 2/1/3/2;
+    margin-top: 0em;
 }
 .stikordjive li{
     margin-bottom: 2em;
@@ -80,8 +78,9 @@
 #læsmerepiljive{
     width: 2em;
     margin-left: 1em;
+    margin-top: 1em;
 }
-/*4. sektion - boligboss*/
+/*4. sektion - boligboss placering af elementer i grid, samt billedstørrelser*/
 .bbvideo{
     grid-area: 2/1/3/4;
     justify-self: stretch;
@@ -114,19 +113,21 @@
 #læsmerepilbb{
     width: 2em;
     margin-left: 1em;
+    margin-top: 1em;
 }
 #merebb{
     display: none;
 }
 }
 @media screen and (min-width: 750px){
+/*1. sektion -forside ændringer i fontstørrelse på tekst*/
 .collagemoi{
     font-size: 3em;
 }
 .collagemoi2{
     font-size: 2em;
 }
-/*2. sektion - rumrejsen*/
+/*2. sektion - rumrejsen omrokering af elementer i grid*/
 .rumrejsenforside{
     grid-area: 2/2/3/4;
     margin-right: 38px;
@@ -146,20 +147,21 @@
     grid-area: 3/1/4/2;
     margin-top: 4em;
 }
+/*tekst under "læs mere" rykkes længere ind på siden for læselighed*/
 #mere p{
     margin-left: 1em;
 }
 #læsmerepil{
     margin-left: 2em;
 }
-/*3. sektion - jive*/
+/*3. sektion - jive "læs mere" tekst rykkes*/
 #merejive p{
     margin-left: 1em;
 }
 #læsmerepiljive{
     margin-left: 2em;
 }
-/*4. sektion - boligboss*/
+/*4. sektion - boligboss omrokering af elementer i grid*/
 .bbvideo{
     grid-area: 2/2/3/4;
     margin-right: 38px;
@@ -185,6 +187,7 @@
     grid-area: 5/1/6/2;
     margin-top: 4em;
 }
+/*"læs mere" tekst rykkes*/
 #merebb p{
     margin-left: 2em;
 }
@@ -193,6 +196,7 @@
 }
 }
 @media screen and (min-width: 1250px){
+/*1. sektion - forside ændringer i billedstørrelse og placering af tekst*/
 .flimmer{
     margin-top: -4em;
     margin-right: 10%;
@@ -208,7 +212,7 @@
 .collagemoi2{
     margin-bottom: 8em;
 }
-/*2. sektion - rumrejsen*/
+/*2. sektion - rumrejsen "læs mere" flyttes og styles*/
 .rumrejseknapper{
     width: 50%;
 }
@@ -224,7 +228,7 @@
     width: 3em;
     margin-left: 5em;
 }
-/*3. sektion - jive*/
+/*3. sektion - jive "læs mere" flyttes og styles*/
 .jivevideo{
     justify-self: start;
 }
@@ -241,7 +245,7 @@
     margin-left: 5em;
 }
 
-/*4. sektion - boligboss*/
+/*4. sektion - boligboss "læs mere" flyttes og styles*/
 .bbvideo{
     grid-area: 2/2/3/3;
     margin-right: 38px;

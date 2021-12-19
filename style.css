@@ -1,3 +1,5 @@
+/*************************************************************************/
+/*Global styling for lille skærmstørrelse. Da mange af elementerne går igen på alle siderne, er der en del styling herunder, som vil bruges på alle siderne*/
 /*Fonte*/
 @font-face {
     font-family: beon;
@@ -11,7 +13,8 @@
     font-family: readexbold;
     src: url(/assets/fonts/Readex_Pro/static/ReadexPro-Bold.ttf);
   }
-/*Her sættes nogle values for farverr og fonte, der benyttes gentagende gange*/
+
+/*Her sættes nogle values for farver og fonte, der benyttes gentagende gange*/
   :root{
     --rød: #FF0000;
     --grøn: #00FC00;
@@ -22,6 +25,7 @@
     --readex: 'readex', sans-serif;
     --bold: 'readexbold', sans-serif;
 }
+
 /*Overordnet styling af baggrund samt de mest brugte fonte, som skal styles ens på alle siderne*/
 body{
     background-color: var(--lys);
@@ -34,6 +38,8 @@ h4{
 h5{
     font-family: var(--beon);
     font-size: 0.95em;
+    margin-top: 1em;
+    margin-bottom: -0.5em;
 }
 p{
     font-family: var(--readex);
@@ -85,11 +91,7 @@ nav{
 }
 /*Navigationsbar styling slut*/
 
-/************************************************/
-
-/*Herunder begynder stylingen af index-siden*/
-/*1. sektion - forside start*/
-/*Titel*/
+/*Titel på siderne*/
 header{
     position: relative;
     z-index: 1;
@@ -105,6 +107,73 @@ header{
     font-size: clamp(1.2em, 4.5vw, 3em);
     line-height: 0.5em;
 }
+
+/*Banner med navn og link til forside*/
+.navnebanner{
+    background-color: var(--rød);
+    color: var(--lys);
+    font-family: var(--beon);
+    font-size: 1.5em;
+    padding: 0.1em 0 0.1em 0;
+    width: 100vw;
+    margin:2.7em 0 0 -8px;
+    white-space: nowrap; 
+    overflow: hidden;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+}
+.navnebanner a{
+    text-decoration: none;
+    color: var(--lys);
+}
+/*Styling af sorte bannere med overskrifter til sektionerne*/
+.banner{
+    background-color: var(--sort);
+    color: var(--lys);
+    font-family: var(--beon);
+    font-size: 1.5em;
+    padding: 0.1em 0 0.1em 0;
+    margin: 0 0 -8px -0.5em;
+    width: 100vw;
+    white-space: nowrap; 
+    overflow: hidden;
+    position: sticky;
+    top: 1.28em;
+    z-index: 1;
+}
+/*Grid der benyttes på alle sektioner*/
+.gridcontainer{
+    display: grid;
+    grid-template-columns: 30% 60% 10%;
+}
+
+/*Dekoration der adskiller sektioner (venstre)*/
+.dekoration{
+    width: 12em;
+    margin-top: 3em;
+    margin-bottom: 3em;
+    margin-left: -8px;
+    mix-blend-mode: difference;
+}
+
+/*Dekoration der adskiller sektioner (højre)*/
+.dekorationhøjre{
+    width: 12em;
+    margin: 3em 2em 3em 0;
+    transform: scaleX(-1);
+    float:right;
+    mix-blend-mode: normal;
+}
+section{
+    margin-bottom: 2em;
+}
+
+/*Her slutter den globale styling*/
+/*************************************************************************/
+
+/*Herunder begynder stylingen af index-siden for lille skærmstørrelse*/
+/*1. sektion - forside start*/
 /*Billede med slangevæsen*/
 .slange{
     float: right;
@@ -130,59 +199,15 @@ header{
 }
 /*1. sektion - forside slut*/
 
-/*Banner med navn*/
-.navnebanner{
-    background-color: var(--rød);
-    color: var(--lys);
-    font-family: var(--beon);
-    font-size: 1.5em;
-    padding: 0.1em 0 0.1em 0;
-    width: 100vw;
-    margin:2.7em 0 0 -8px;
-    white-space: nowrap; 
-    overflow: hidden;
-    position: sticky;
-    top: 0;
-    z-index: 2;
-}
-/*Skrå striber mellemrum*/
-.dekoration{
-    width: 12em;
-    margin-top: 3em;
-    margin-bottom: 3em;
-    margin-left: -8px;
-    mix-blend-mode: difference;
-}
-
 /*2. sektion multimediedesigner*/
-/*banner med overskrift*/
-.banner{
-    background-color: var(--sort);
-    color: var(--lys);
-    font-family: var(--beon);
-    font-size: 1.5em;
-    padding: 0.1em 0 0.1em 0;
-    margin: 0 0 -8px -0.5em;
-    width: 100vw;
-    white-space: nowrap; 
-    overflow: hidden;
-    position: sticky;
-    top: 1.28em;
-    z-index: 1;
-}
-/*Grid med overskrifter og beskrivende tekst*/
-.gridcontainer{
-    display: grid;
-    grid-template-columns: 30% 60% 10%;
-    margin-top: 1em;
-}
+/*Overskrifter, beskrivende tekst og billede placeres i griddet*/
 .hvem{
     grid-area: 1/1/2/2;
 }
 .ommig{
     grid-area: 1/2/2/3;
 }
-.skærm{
+.portræt{
     grid-area: 2/2/3/3;
     width: 25vw;
     justify-self: end;
@@ -193,19 +218,10 @@ header{
 .historie{
     grid-area: 3/2/4/3;
 }
-/*Skrå steger dekoration*/
-.dekorationhøjre{
-    width: 12em;
-    margin: 3em 2em 3em 0;
-    transform: scaleX(-1);
-    float:right;
-    mix-blend-mode: normal;
-}
 /*2. sektion slut*/
 
 /*3. sektion - kompetencer*/
-/*banner med overskrift er stylet sammen med banneret i sektionen over*/
-/*Grid med overskrifter og tekst*/
+/*Overskrifter og tekst placeres i griddet*/
 .uddannelse{
     grid-area: 1/1/2/2;
 }
@@ -225,8 +241,9 @@ header{
     grid-area: 3/2/4/3;
 }
 /*3. sektion slut*/
+
 @media screen and (min-width: 750px){
-/*Overordnet styling af font og navbar for alle sider*/
+/*Global styling for mellem skærmstørrelse. Her ændres font-størrelse, navigationsbarens størrelse og dekorationerne der adskiller sektioner*/
 h4{
     font-size: 1.15em;
 }
@@ -254,8 +271,8 @@ nav{
     margin: 4em 46px 4em 0;
 }
 
-/*Styling af index-side*/
-/*1. sektion - forside*/
+/*Styling af index-side for mellem skærmstørrelse*/
+/*1. sektion - forside ændringer i placering*/
 .slange{
     margin-top: -18em;
 }
@@ -269,7 +286,7 @@ nav{
 }
 }
 @media screen and (min-width: 1250px){
-/*Overordnet styling af font og navbar for alle sider*/   
+/*Global styling for stor skærmstørrelse. Her ændres font-størrelse, navigationsbarens størrelse og dekorationerne der adskiller sektioner*/  
 h4{
     font-size: 1.45em;
     margin-bottom: 2em;
@@ -313,7 +330,9 @@ nav{
     width: 25em;
     margin-right: 80px;
 }
-/*Styling af index-side*/
+
+/*Styling af index-side for stor skærmstørrelse*/
+/*1. sektion - forside ændringer i størrelser*/
 .slange{
     margin-top: -20em;
 }
@@ -326,8 +345,8 @@ nav{
     margin-top: 5.85em;
     margin-left: 20vw;
 }
-/*ændringer i grid*/
-.skærm{
+/*2. sektion - multimediedesigner ændringer i placering*/
+.portræt{
     grid-area: 1/2/4/4;
     margin-right: 72px;
 }

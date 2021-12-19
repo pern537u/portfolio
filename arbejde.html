@@ -10,6 +10,7 @@
     <script src="script.js"></script>
 </head>
 <body>
+    <!--Navigationsbar i højre side af skærmen med links til undersider samt sociale medier-->
     <nav>
         <a class="rotate arbejde" href="arbejde.html">Arbejde</a>
         <a class="rotate personligt" href="personligt.html">personligt</a>
@@ -19,20 +20,26 @@
             <a href="mailto: pernillekent@gmail.com"><img src="/assets/images/mail.svg" alt="Mail logo"></a>
         </div>
     </nav>
+    <!--Banner med navn, der skal sidde fast øverst når der scrolles og linke til indexsiden-->
     <h3 class="navnebanner"><a href="index.html"> Pernille Kent Nørregaard pernille kent nørregaard pernille kent nørregaard pernille kent nørregaard pernille kent nørregaard</a></h3>
+    <!--Titel på siden-->
     <header>
         <h1>udvalgte udvalgte udvalgte udvalgte udvalgte</h1>
         <h1>projekter projekter projekter projekter projekter projekter projekter projekter projekter projekter</h1>
     </header>
+    <!--1. sektion af arbejdssiden "forside" indebærer billede og citat-->
     <section class="forside">
-        <img class="flimmer" src="/assets/images/flimmer.jpeg" alt="Slangevæsen lavet i Adobe Illustrator">
+        <img class="flimmer" src="/assets/images/flimmer.jpeg" alt="Billede af skærmflimmer">
         <h2 class="collagemoi">"Collage moi"</h2>
         <h2 class="collagemoi2">Rumrejsen<br>Photoshopøvelse</h2>
     </section>
+    <!--Dekoration der adskiller sektionerne ad-->
     <img class="dekoration" src="/assets/images/dekorationbund.png" alt="Skrå steger dekoration">
+    <!--2. sektion "rumrejsen" indebærer banner med overskrift, sektion med indhold, dekoration nederst til at tydeliggøre sektionens afslutning-->
     <section class="rumrejsen">
         <h3 class="banner">rumrejsen rumrejsen rumrejsen rumrejsen rumrejsen rumrejsen rumrejsen rumrejsen rumrejsen rumrejsen rumrejsen</h3>
-        <div class="gridcontainer">
+        <!--sektion med indhold i form af tekst, billeder, stikord og "læs mere"-->
+        <section class="gridcontainer">
             <h4 class="opgavebeskrivelse">“Udvikl et koncept og digital løsning ift. salg af rejser ud i rummet” </h4>
             <img class="rumrejsenforside" src="/assets/images/rumrejsenforside.png" alt="Screenshot at forside til rumrejsen">
             <ul class="stikord forside">
@@ -42,19 +49,28 @@
             <ul class="stikord knapper">
                 <li>Design af knapper i illustrator</li>
             </ul>
-            <!--div'en herunder er en "knap" der kan vise mere tekst, når man trykker på den. Til at få knappen til at virke, 
-                er der brugt javascript og jeg har lånt selve koden til sådan en knap af https://www.w3schools.com/howto/howto_js_read_more.asp
+            <!--div'en herunder er en pil der kan vise mere tekst, når man trykker på den. Til at få knappen til at virke, 
+                er der brugt javascript og jeg har lånt selve koden til sådan en knap af https://www.w3schools.com/howto/howto_js_read_more.asp men den er tilpasset til behovet i denne sammenhæng.
                 Denne er kopieret 2 gange mere, i de næste sektioner-->
             <div class="læsmere">
-                <h5>Læs om processen</h5><span id="mere"><p class="p">erisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida venenatis. Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor porta.</p></span>
+                <h5>Læs om processen</h5>
+                <span id="mere">
+                    <h5>Fokus</h5>
+                    <p>Dette var det første temaprojekt på multimediedesigneruddannelsen, derfor har mængden af viden og værktøjer været begrænset. Dette projekt handlede om opstarten af projektets proces og det er dette der har været fokus på i projektet, herunder idégenerering, sketching og udvikling af grafisk indhold. Der er tale om en fiktiv kunde, der ikke var opgivet på forhånd.</p>
+                    <h5>Proces</h5>
+                    <p>I gruppen startede vi med at idégenerere, for at finde på et koncept ift. salg af rumrejser og dermed finde ud af hvem kunden er. Da vi kom frem til en hotelkæde med rejser i rummet og fastsatte at dette var vores kunde, skulle vi have styr på målgruppen. En del af målgruppen var fastsat på forhånd “Privatpersoner der har råd til rumrejser.”, men skulle præciseres yderligere i gruppen. Efter overvejelser og diskussioner i gruppen, kom vi frem til at konceptet skulle udvikles til “Velhavende privatpersoner der ønsker en ekstraordinær og luksuriøs oplevelse, udover det sædvanlige”. Herfra kunne vi begynde at arbejde med udtryk og designet af hjemmesiden.
+                        Vi lavede mange sketches til forslag af sidernes udseende og snakkede om forskellige stilarter, farver og elementer, vi kunne bruge til at appellere til målgruppen. Til sidst kom vi frem til at det gennemgående tema skulle være præget af art deco/deco punk og vi snakkede en del om at det skulle have noget retro-futurism ind over. Med en mørkeblå spacey baggrundsfarve og masser af guld detaljer kunne vi afspejle det luksuriøse udtryk. Designet af knapperne “membership” og “we recommend” i Adobe Illustrator har båret præg af retro-futurism.</p>
+                </span>
                 <img onclick="myFunction()" id="læsmerepil" src="/assets/images/læsmerepil.svg" alt="Pil">
             </div>
-        </div>
+        </section>
         <img class="dekorationhøjre" src="/assets/images/dekorationbund.png" alt="Skrå steger dekoration">
     </section>
+    <!--3. sektion "jive" indebærer banner med overskrift, sektion med indhold, dekoration nederst til at tydeliggøre sektionens afslutning-->
     <section class="jive">
         <h3 class="banner">jive danseskole jive danseskole jive danseskole jive danseskole jive danseskole jive danseskole jive danseskole</h3>
-        <div class="gridcontainer">
+        <!--sektion med indhold i form af tekst, billeder, stikord og "læs mere"-->
+        <section class="gridcontainer">
             <h4 class="opgavebeskrivelse">“I skal producere et website for en danseskole, der er målrettet et specifikt brugersegment”</h4>
             <video class="jivevideo" autoplay loop>
                 <source src="/assets/images/jivevideo.mp4" type="video/mp4">
@@ -66,16 +82,26 @@
                 <li>Sticky tilmeldingsknap</li>
             </ul>
             <div class="læsmerejive">
-                <h5>Læs om processen</h5><span id="merejive"><p class="p">Ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida venenatis. Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor porta.</p></span>
+                <h5>Læs om processen</h5>
+                <span id="merejive">
+                    <h5>Fokus</h5>
+                    <p>I dette projekt har der været fokus på blandt andet: UI, Gestaltlove & Designprincipper, Design Thinking, Målgrupper & personaer. Den fiktive kunde i projektet er: “en danseskole der tilbyder undervisning i jive-dans”. </p>
+                    <h5>Proces</h5>
+                    <p>Vi arbejdede med en del målgruppeanalyse i dette projekt og brugte forskellige værktøjer og metoder. Vi lavede desk-research omkring jive-dans, interview med en danselærer i blandt andet Jive, samt observationer af danseskolen og eleverne. Ud Fra dette arbejde, kunne vi udarbejdede også et affinity-diagram og derefter udvikle en persona.
+                        Vi valgte at udfordre os selv på målgruppen, da vi fandt ud af at der faktisk var et voksende problem i forhold til unge voksne i alderen 25-35 år. Vi snakkede en del om at det før i tiden har været normen at unge voksne gik til dans, men at det efterhånden er en uddød sport. Vores interview og observationer gav os mange gode idéer til, hvordan vi kan prøve at fange denne målgruppe igen og gøre den interesserede i dansen. 
+                        Efter arbejdet med målgruppe og personaer gik vi i gang med sketching og wireframes til hjemmesiden. Mit ansvar i projektet var design og jeg skulle derfor sørge for et præcist gennemgående design, der passer til målgruppen. Farverne og formerne skal afspejle jive dansens energi og glæde, men holdes simpelt og moderne for målgruppen. Det simple og brugervenlige udtryk opnås ved at gøre brug af forskellige gestaltlove og designprincipper, blandt andet loven om nærhed, similarity og kontrast.
+                        Vi har arbejdet på projektet i gennem Design Thinking processens fem faser og foretaget iterationer undervejs.</p>
+                </span>
                 <img onclick="myFunctionJive()" id="læsmerepiljive" src="/assets/images/læsmerepil.svg" alt="Pil">
             </div>
-
-        </div>
+        </section>
         <img class="dekorationhøjre" src="/assets/images/dekorationbund.png" alt="Skrå steger dekoration">
     </section>
+    <!--4. sektion "boligboss" indebærer banner med overskrift, sektion med indhold, dekoration nederst til at tydeliggøre sektionens afslutning-->
     <section class="boligboss">
         <h3 class="banner">BoligBoss BoligBoss BoligBoss BoligBoss BoligBoss BoligBoss BoligBoss Boligboss Boligboss Boligboss Boligboss</h3>
-        <div class="gridcontainer">
+        <!--sektion med indhold i form af tekst, billeder, stikord og "læs mere"-->
+        <section class="gridcontainer">
             <h4 class="opgavebeskrivelse">“Designe og udvikle en prototype af en salgsplatform”</h4>
             <video class="bbvideo" autoplay loop>
                 <source src="/assets/images/boligbossvideo.mp4" type="video/mp4">
@@ -91,14 +117,21 @@
             <ul class="stikordmockups">
                 <li>Udvikling af mock-ups til alle sider i XD</li>
             </ul>
-        
             <div class="læsmerebb">
-                <h5>Læs om processen</h5><span id="merebb"><p class="p">Venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida venenatis. Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor porta.</p></span>
+                <h5>Læs om processen</h5>
+                    <span id="merebb">
+                        <h5>Fokus</h5>
+                        <p>Arbejdet med denne hjemmeside har været anderledes end de tidligere projekter. Denne side er produktet af et forløb omkring SoMe og branding, hvor fokus har været på brandidentitet, markedsføring og content. Derfor har hjemmesiden ikke været hovedfokus i projektet. På trods af dette har jeg valgt at fremvise den her, da det er en af de mest gennemførte hjemmesider, jeg har været med til at designe og udvikle. Hjemmesiden er baseret på en app, som vi i et tidligere projekt skulle udvikle en prototype til. I det projekt var fokus på iværksætteri, forretning og at skabe en prototype der kommunikere et budskab til målgruppen.</p>
+                        <h5>Proces</h5>
+                        <p>Det fleste valg omkring designet og det visuelle udtryk er taget i første del af projektet, da der skulle udvikles en app. Med vores viden om brandidentitet kunne vi overføre dele af designet til hjemmesiden, så det er tydeligt at hjemmesiden skal repræsentere appen og at disse to er forbundet.
+                        Vi har arbejdet meget med personaer og brugerscenarier i dette projekt, for at klargøre hvilke elementer brugeren skal kunne finde på hjemmesiden. Derefter har vi udarbejdet wireframes til de forskellige undersider. Mit ansvar i projektet var at udvikle mockups til hver side. Jeg har genbrugt farver og fonte fra første del af projektet, men arbejdet en del mere med betydningen af hver farve og hvordan de benyttes, eksempelvis hvor og hvordan kontraster skal skabe call-to-action. Derudover er der arbejdet meget med gestaltlove og designprincipper herunder loven om nærhed og særligt fokus på whitespace.
+                        Da hjemmesiden ikke skal indeholde alt den information som BoligBoss indebærer, men blot er en kort og præcis gennemgang af hvad appen kan og hvem den er til, var det derfor vigtigt at udtrykket skulle være meget åbent og overskueligt for brugeren, så de hurtigt kan finde den information de søger.</p>
+                    </span>
                 <img onclick="myFunctionBb()" id="læsmerepilbb" src="/assets/images/læsmerepil.svg" alt="Pil">
             </div>
-
-        </div>
+        </section>
         <img class="dekoration" src="/assets/images/dekorationbund.png" alt="Skrå steger dekoration">
     </section>
+    <!--Der er ikke flere sektioner på denne side nu, men det er muligt at tilføje sektioner af samme form i fremtiden herunder-->
 </body>
 </html>

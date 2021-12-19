@@ -1,15 +1,9 @@
 @media screen and (min-width: 1px){
+    /*Navnebanneret som er stylet i indexfilen placeres øverst på siden her*/
     .navnebanner{
-        top:0;
         margin-top: -8px;
-        margin-bottom: 0em;
-        z-index: 2;
     }
-    .navnebanner a{
-        text-decoration: none;
-        color: var(--lys);
-    }
-    /*1. sektion - øverste del af siden*/
+    /*1. sektion - forside styling af billede og citat*/
     .contagious{
         width: 100%;
         max-width: 1250px;
@@ -26,60 +20,61 @@
         font-size: 2em;
         margin-bottom: -0.5em;
     }
-    /*2. sektion - Akrylmarier*/
-    /*Første element i sektionen "donnie darko"*/
+    /*2. sektion - Akrylmarier placering af elementer i hver deres grid*/
+    /*Første sektion i sektionen "donnie darko"*/
     .inspiration{
         grid-area: 1/2/2/3;
     }
     .donnie{
-        grid-area: 2/2/9/4;
+        grid-area: 2/2/3/4;
         margin-right: 30px;
         justify-self: stretch;
+        max-width: 600px;
     }
     .stikord{
         grid-area: 2/1/4/2;
     }
-    /*Næste element i sektionen "contagious"*/
+    /*Næste sektion i sektionen "contagious"*/
     .contagiousgrid{
         grid-area: 2/2/3/4;
         margin-right: 30px;
         justify-self: stretch;
+        max-width: 600px;
     }
     .contagiousmaleri{
         grid-area: 3/2/4/4;
         margin-right: 30px;
         justify-self: stretch;
+        max-width: 600px;
     }
-    /*Næste element i sektionen "telefoot"*/
+    /*Næste sektion i sektionen "telefoot"*/
     .sketch1{
-        grid-area: 2/2/3/4;
-        width: 48.5%;
-        margin-left: 50%;
-        margin-right: 30px;
-        justify-self: end;
+        grid-area: 2/2/3/3;
+        width: 37.7%;
+        margin-left: 35%;
+        justify-self: start;
     }
     .sketch2{
-        grid-area: 2/2/3/4;
-        width: 45%;
+        grid-area: 2/2/3/3;
+        width: 35%;
         justify-self: start;
     }
     .telefoot{
         grid-area: 3/2/4/4;
         margin-right: 30px;
         justify-self: stretch;
+        max-width: 600px;
     }
 
-    /*3. sektion - custom shoes*/
+    /*3. sektion - custom shoes, placering af elementer i hver deres grid*/
     /*"michelangelo" sko*/
     .michelangelo{
-        grid-area: 2/2/3/4;
-        margin-right: 30px;
+        grid-area: 2/2/3/3;
         justify-self: stretch;
     }
     .michelangelodetaljer{
-        grid-area: 3/2/4/4;
+        grid-area: 3/2/4/3;
         justify-self: stretch;
-        margin-right: 30px;
     }
     .detaljer{
         grid-area: 3/1/4/2;
@@ -89,17 +84,16 @@
         grid-area: 1/2/2/3;
     }
     .macmiller{
-        grid-area: 2/2/3/4;
-        margin-right: 30px;
+        grid-area: 2/2/3/3;
         justify-self: stretch;
     }
     .macmillerdetaljer{
-        grid-area: 3/2/4/4;
+        grid-area: 3/2/4/3;
         justify-self: stretch;
-        margin-right: 30px;
     }
 }
 @media screen and (min-width: 750px){
+    /*1. sektion - forside ændringer i font-størrelse og placering*/
     .forside h2{
         position: relative;
         margin-top: 1em;
@@ -112,36 +106,19 @@
     .collagemoi2{
         font-size: 2em;
     }
+    /*2. sektion - akrylmalerier ændringer i billedernes margin, så de ikke dækkes af navbar*/
     .donnie{
         margin-right: 38px;
-        max-width: 500px;
     }
     .contagiousgrid{
-        grid-area: 2/2/6/3;
-
+        margin-right: 38px;
     }
     .contagiousmaleri{
-        grid-area: 6/2/10/3;
-    }
-    .sketch1{
-        grid-area: 2/2/3/3;
-        width: 48.5%;
-        margin-left: 50%;
-        margin-right: 30px;
-        justify-self: end;
-    }
-    .sketch2{
-        grid-area: 2/2/3/3;
-        width: 45%;
-        justify-self: start;
-    }
-    .telefoot{
-        grid-area: 3/2/4/3;
-        margin-right: 30px;
-        justify-self: stretch;
+        margin-right: 38px;
     }
 }
 @media screen and (min-width: 1250px){
+    /*1. sektion - forside ændring i størrelser og placering*/
     .contagious{
         width: 60%;
         float: right;
@@ -157,11 +134,5 @@
     }
     .collagemoi2{
         font-size: 2.5em;
-    }
-    .contagiousgrid{
-        max-width: 750px;
-    }
-    .contagiousmaleri{
-        max-width: 750px;
     }
 }
